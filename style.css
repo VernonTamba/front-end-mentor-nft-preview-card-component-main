@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+p {
+  font-size: 18px;
+}
+
+.card {
+  height: 80vh;
+  width: 350px;
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card__ImageSection {
+  height: 50%;
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__MainImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.card__ContentSection {
+  width: 100%;
+  height: 50%;
+}
+
+.card__Title {
+  color: white;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card__Description {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.card__LeftRightDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid gray;
+}
+
+.card__LeftDivDescription,
+.card__RightDivDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__LeftDivDescription p,
+.card__RightDivDescription p {
+  margin-left: 7px;
+}
+
+.card__LeftDescription {
+  color: hsl(178, 100%, 50%);
+}
+
+.card__RightDescription {
+  color: #8bacd9;
+}
+
+.card__AuthorProfile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.card__AuthorIcon {
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.card__AuthorName {
+  margin-left: 20px;
+  color: grey;
+}
+
+.card__AuthorProfile span {
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card__ImageSection:hover {
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(178, 100%, 50%);
+}
+
+.card__MainImage:hover {
+  opacity: 0.5;
+}
+
+.card__Title:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.card__AuthorProfile span:hover {
+  color: hsl(178, 100%, 50%);
+}
